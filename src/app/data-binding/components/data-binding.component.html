@@ -1,0 +1,42 @@
+<section class="content">
+    <h1 id="angular-components-overview">
+        O que são Data Binding ?
+    </h1>
+
+    <p>A  vinculação  de  dados  é  um  dos  recursos  mais  poderosos  e importantes em qualquer linguagem de desenvolvimento de software. </p>
+
+    <p>Ele  nos  permite  definir  a  comunicação  entre  o  componente  e  a visualização. Portanto, podemos dizer que a vinculação de dados é passada  de  um  componente  para  a  visualização  e  da  visualização para o componente.</p>
+
+    <h2>Tipos de data binding</h2>
+    <p>Estas são algumas das diretivas mais usadas:</p>
+
+    <ul id="diretivas">
+        <li>String Interpolation:o String Interpolation é do tipo one way data binding,  ou  seja,  o  dado  é  apenas  apresentado  na  tela  para  o usuário, sem alteração do valor internamente. String Interpolation é utilizado para interpolar valores das propriedades do componente dentro do template HTML. Para fazer essa interpolação, use chaves duplas, e dentro dos colchetes duplos, coloque o nome do atributo do componente ou alguma expressão JavaScript.</li>
+
+        <li>Property  Binding:  Também  sendo  um  one  way  data  binding,  o property  Binding  serve,  principalmente,  para  atrelar  valores  de atributos docomponente aos atributos de um elemento HTML ou algum  outro  componente.  Para  usar  o  property  binding,  dentro do   elemento   que   você   deseja   usá-lo,   coloque   o   nome   da propriedade entre colchetes, por exemplo ([propriedade]=”atributoDoComponente”). Assim, a propriedade terá o valor do atributo do seu componente.
+        </li>
+
+        <li>Event  Binding:  O  Event  Binding  funciona  para  ouvir  eventos nativos   do   HTML   ou   eventos   que   podem   ser   criados   pelo programador,  executando  algum  método  do  componente.  Para usar o event binding é necessário que, dentro do elemento HTML ou componente, coloque entre parênteses o nome da função e , entre  aspas,  coloque  a  chamada  da  função  que  deseja  executar ((nomeDoEvento)=”metodoDoComponente()”)</li>
+
+        <li>Two  Way  Data  Binding:  O  Two  Way  Data  Binding  é  um  tipo especial   de   binding,   onde   além do   valor   do   atributo   ser apresentado  na  tela  do  usuário,  caso  o  valor  seja  editado  em algum  campo  de  input,  o  valor  será  automaticamente  alterado internamente no componente. Essa abordagem é muito utilizada para aumentar a interação do usuário, atualizar dados em tempo real, entre outras coisas.
+
+        É  importante  salientar  que  para  usar  esse  método  de  Binding  é necessário importar o módulo de formulários do Angular dentro do módulo   principal,   já   que   essa   abordagem   é   geralmente utilizada  dentro  de  formulários.Após  a  importação  ser  feita, dentro do componente que há o formulário, dentro do input que deseja  usar  o  TWDB,  coloque  entre colchetes  e  parênteses, respectivamente, a diretiva ngModel, como no exemplo abaixo:<br>
+
+        <img src="assets/Capturar.PNG"><br>
+
+        Note   que   dentro   do   input   existe   o   atributo name.   Essa propriedade  é  obrigatória  para  o  TWDB  funcione.  Sem  ela,  não será possível fazer a identificação interna do elemento para poder executar   o   data   Binding.   O   atributo   name   não   precisa   ter exatamente   o   mesmo   nome   da   propriedade,   entretanto,   é obrigatório que ele esteja no elemento. Agora para testar se está funcione, interpole a mesma variável que foi usada no HTML para ver o valor mudar dinamicamente.
+
+        </li>
+
+    </ul>
+
+    <h2>Pré-requisitos</h2>
+    <p>Para utilizar os data binding, verifique se está seguindo estes pré-requisitos</p>
+    
+    <ol>
+        <li>Instale o Angular CLI com o seguinte comando: npm install g @angular/cli</li>
+        <li>Veja se ja esta com o projeto criado. Se ainda nao possui um projeto, crie um usando o seguinte comando no prompt de comando: ng new nome-do-projeto, onde nome-do-projeto é o nome da sua aplicação em Angular </li>
+        <li>Digite o comando: ng serve --open. Seu navegador irá abrir com a pagina do Angular informando que seu projeto está funcionando.</li>
+    </ol>
+
+</section>

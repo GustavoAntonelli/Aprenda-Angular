@@ -1,0 +1,39 @@
+<section class="content">
+    <h1 id="angular-components-overview">
+        O que são components ?
+    </h1>
+
+    <p>O Component é simplesmente a Controller da View. Sim, a view é o HTML mesmo. É no component que nós cuidamos do que é necessário para trazer funcionalidade para as views, usando o Typescript para escrever o código. Por exemplo, é no component que nós usamos uma service para tazer valores e então passamos esses valores para alguma variável, para então poder exibí-la na view.</p>
+
+    <p>É convencionado no Angular nomear esses arquivos mais ou menos assim => exemplo.component.ts. Vale lembrar que estou me referindo ao que colocamos no arquivo .component. Dentro do component nós usamos um decorator chamado @Component para então declarar nossa View, o estilo(CSS,SASS e etc) e um seletor(nome do componente, que poderá ser chamado em outras views).</p>
+
+    <h2>Pré-requisitos</h2>
+    <p>Para criar um componente, verifique se está seguindo estes pré-requisitos</p>
+    
+    <ol>
+        <li>Instale o Angular CLI com o seguinte comando: npm install g @angular/cli</li>
+        <li>Veja se ja esta com o projeto criado. Se ainda nao possui um projeto, crie um usando o seguinte comando no prompt de comando: ng new nome-do-projeto, onde nome-do-projeto é o nome da sua aplicação em Angular </li>
+        <li>Digite o comando: ng serve --open. Seu navegador irá abrir com a pagina do Angular informando que seu projeto está funcionando.</li>
+    </ol>
+
+    <h2>Criando um component</h2>
+    <p>A melhor maneira de criar um component é com a Angular CLI. Você também pode criar um component manualmente.</p>
+
+    <h3>Criando um component usando Angular CLI</h3>
+    <p>Para criar um component usando o Angular CLI:</p>
+
+    <ol>
+        <li>Na janela do terminal, navegue até o diretório que contenha sua aplicação.</li>
+        <li>Coloque o seguinte comando: ng generate component nome-do-componente, onde nome-do-componente é o nome do novo component.</li>
+    </ol>
+
+    <p>Por padrão, este comando cria o seguinte:</p>
+    <ul>
+        <li>O nome da pasta</li>
+        <li>O arquivo component, nome-do-componente.component.ts</li>
+        <li>O arquivo HTML, nome-do-componente.component.html</li>
+        <li>O arquivo CSS, nome-do-componente.component.css</li>
+        <li>O arquivo de teste, nome-do-componente.component.spec.ts</li>
+    </ul>
+    <p>Onde nome-do-componente é o nome do seu component.</p>
+</section>

@@ -1,0 +1,39 @@
+<section class="content">
+    <h1 id="angular-components-overview">
+        O que são services ?
+    </h1>
+
+    <p>Nossos componentes precisam acessar os dados. Você pode escrever código de acesso a dados em cada componente, mas isso é muito ineficiente e quebra a regra da responsabilidade única. O componente deve se concentrar na apresentação de dados ao usuário. A tarefa de obter dados do servidor back-end deve ser delegada a alguma outra classe. Chamamos essa classe de classe de serviço. Porque fornece o serviço de fornecer dados a todos os componentes que deles necessitem.</p>
+
+    <p>Os componentes não devem buscar ou salvar dados diretamente e certamente não devem apresentar dados falsos intencionalmente. Eles devem se concentrar em apresentar dados e delegar acesso a dados a um serviço.</p>
+
+    <p>Em síntese, Service um pedaço de código reutilizável com um propósito específico. Um código que você usará em muitos componentes em seu aplicativo.</p>
+
+    <p>Um comparação seria o seguinte: o MODULO é a casa, a lampada o COMPONENTE e o que faz ela acender é o SERVICE.</p>
+
+    <h2>Pré-requisitos</h2>
+    <p>Para criar um service, verifique se está seguindo estes pré-requisitos</p>
+    
+    <ol>
+        <li>Instale o Angular CLI com o seguinte comando: npm install g @angular/cli</li>
+        <li>Veja se ja esta com o projeto criado. Se ainda nao possui um projeto, crie um usando o seguinte comando no prompt de comando: ng new nome-do-projeto, onde nome-do-projeto é o nome da sua aplicação em Angular </li>
+        <li>Digite o comando: ng serve --open. Seu navegador irá abrir com a pagina do Angular informando que seu projeto está funcionando.</li>
+    </ol>
+
+    <h2>Criando um servico</h2>
+    <p>A melhor maneira de criar um service é com a Angular CLI. Você também pode criar um service manualmente.</p>
+
+    <h3>Criando um service usando Angular CLI</h3>
+    <p>Para criar um service usando o Angular CLI:</p>
+
+    <ol>
+        <li>Na janela do terminal, navegue até o diretório que contenha sua aplicação.</li>
+        <li>Coloque o seguinte comando: ng generate service nome-da-pasta-que-contem-o-modulo/nome-da-pasta/nome-do-service.</li>
+    </ol>
+
+    <p>Por padrão, este comando cria o seguinte:</p>
+    <ul>
+        <li>O arquivo service, nome-do-service.service.ts</li>
+    </ul>
+    <p>Onde nome-do-service é o nome do seu component.</p>
+</section>

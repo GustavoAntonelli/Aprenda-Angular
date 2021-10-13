@@ -1,0 +1,41 @@
+<section class="content">
+    <h1 id="angular-components-overview">
+        RXJS
+    </h1>
+
+    <p>É uma biblioteca do Angular que já vem instalado quando se cria a aplicação.</p>
+
+    <h2>Observables</h2>
+
+    <p>Observable é uma funcionalidade da biblioteca rxjs, que é utilizada internamente pelo framework e já é instalada quando você cria uma nova aplicação Angular. Com  Observables, conseguimos lidar com transferência de dados assíncrona. Muitas vezes, seu uso é semelhante ao de Promises do Javascript, porém, podendo ser uma fonte de  transferência de dados contínua, ou seja, o Observable poderá emitir dados várias vezes em momentos distintos de sua existência.Por definição,é uma coleção que funciona de  forma unidirecional, ou seja, ele emite notificações sempre que ocorre uma mudança em um de seus itens e a partir disto podemos executar uma ação.</p>
+
+    <h2>Subjects</h2>
+
+    <p>Um Subjecté um tipo especial de Observável que permite que os valores sejam transmitidos por multicast para muitos Observers. Os subjectstambém são observersporque podem se inscrever em outro observablee obter valor dele, que será transmitido por multicast para todos os seus assinantes.Basicamente, um sujeito pode atuar tanto como observável quanto como observador.</p>
+
+
+    <h2>Tipos de Subjects</h2>
+    <p>Estas são algumas dos tipos de subjects</p>
+
+    <ul id="diretivas">
+        <li>Subject: Ao usar o Subject normal, os eventos de envio de dados são executados a partir do momento em que o subscribe inicializado, ouseja, os dados que são retornados são apenas os que são enviados a partir do momento que ele já ouvindo os eventos</li>
+
+        <li>ReplaySubject: No ReplaySubject, diferente do Subject, no momento em que o subscribe é executado, ele retorna os dados desde o início.</li>
+
+        <li>AsyncSubject: No AsyncObjectele retornaapenas o últimoevento enviadodo Observable antes de seu complete</li>
+
+        <li>BehaviorSubject: Esse, diferente dos outros, quando instanciado, é obrigatório inicia-lo com o tipo de valor que será guardado dentro dele. Ao inicia-lo, se caso  nenhum dadotiver sido enviado ainda, ele retornará o valor padrão nele adicionado.</li>
+
+    </ul>
+
+    <h2>Pré-requisitos</h2>
+    <p>Para utilizar o RXJS, verifique se está seguindo estes pré-requisitos</p>
+    
+    <ol>
+        <li>Instale o Angular CLI com o seguinte comando: npm install g @angular/cli</li>
+        <li>Veja se ja esta com o projeto criado. Se ainda nao possui um projeto, crie um usando o seguinte comando no prompt de comando: ng new nome-do-projeto, onde nome-do-projeto é o nome da sua aplicação em Angular </li>
+        <li>Digite o comando: ng serve --open. Seu navegador irá abrir com a pagina do Angular informando que seu projeto está funcionando.</li>
+    </ol>
+
+</section>
+
